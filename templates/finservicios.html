@@ -44,7 +44,7 @@
 										<td>{{item.comentarios}}</td>
 										{% if item.fechaEnterado %}
 											<td><p>Servicio en proceso</p></td>
-											<td><a href="/finalizar/{{item.id}} ">Finalizar</a></td></tr>
+											<td><a href="/finalizar/{{item.id}}" role="button" onclick="return confirm('Esta seguro de finalizar el servicio?')">Finalizar</a></td></tr>
 										{% else %}
 											<td><p>El notificador {{item.notificador}} no se ha enterado</p></td>
 											<td><p>No puede finalizar</p></td></tr>
