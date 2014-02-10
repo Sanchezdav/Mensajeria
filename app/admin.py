@@ -11,7 +11,7 @@ class NotificadorAdmin(admin.ModelAdmin):
 	list_display = ('nombre', 'apePaterno', 'apeMaterno', 'statusNotificador')
 
 class ServicioAdmin(admin.ModelAdmin):
-	list_display = ('id', 'solicitante', 'notificador', 'fechaInicio', 'fechaEnterado', 'fechaFin', 'sitio', 'actividad')
+	list_display = ('id', 'solicitante', 'notificador', 'fechaInicio', 'fechaEnterado', 'fechaFin', 'actividad')
 	raw_id_fields = ('solicitante',)
 	list_filter = ('notificador', 'actividad')
 	search_fields = ('notificador__nombre', 'solicitante__username', 'sitio__nombre')

@@ -79,3 +79,9 @@ class Servicio(models.Model):
 
 	def __unicode__(self):
 		return unicode(self.id)
+
+report_builder_fieldsets = (
+    ('Servicio', {
+        'fields': ('solicitante', 'notificador', 'fechaInicio'),
+    }),
+)

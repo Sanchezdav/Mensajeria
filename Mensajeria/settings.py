@@ -132,7 +132,10 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
     'app',
+    'report_builder',
 )
+
+REPORT_BUILDER_GLOBAL_EXPORT = True
 
 from django.core.urlresolvers import reverse_lazy
 
