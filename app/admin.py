@@ -13,7 +13,7 @@ class NotificadorAdmin(admin.ModelAdmin):
 class ServicioAdmin(admin.ModelAdmin):
 	list_display = ('id', 'solicitante', 'notificador', 'fechaInicio', 'fechaEnterado', 'fechaFin', 'actividad')
 	raw_id_fields = ('solicitante',)
-	list_filter = ('notificador', 'actividad')
+	list_filter = ('notificador', 'actividad', 'solicitante')
 	search_fields = ('notificador__nombre', 'solicitante__username', 'sitio__nombre')
 
 class StatusAdmin(admin.ModelAdmin):
