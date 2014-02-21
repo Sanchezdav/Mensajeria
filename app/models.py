@@ -37,7 +37,7 @@ class Notificador(models.Model):
 	nombre = models.CharField(max_length=50)
 	apePaterno = models.CharField(max_length=50, verbose_name="Apelido Paterno", null = True, blank = True)
 	apeMaterno = models.CharField(max_length=50, verbose_name="Apelido Materno", null = True, blank = True)
-	statusNotificador = models.ForeignKey(Status, verbose_name="Status")
+	statusNotificador = models.ForeignKey(Status, verbose_name="Status", default=lambda: Status.objects.get(id=1))
 
 	class Meta:
 		verbose_name_plural = 'Notificadores'
