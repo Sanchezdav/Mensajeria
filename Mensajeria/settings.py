@@ -137,6 +137,7 @@ INSTALLED_APPS = (
 )
 
 REPORT_BUILDER_GLOBAL_EXPORT = True
+REPORT_BUILDER_INCLUDE = ['Servicio', 'Usuario']
 
 from django.core.urlresolvers import reverse_lazy
 
